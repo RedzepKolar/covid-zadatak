@@ -1,11 +1,10 @@
 <template>
   <v-container>
-    <v-card class="d-flex">
+      <v-card class="d-flex card-fix mx-auto">
       <cu-card cTitle="New Confirmed" :cData="globalData.NewConfirmed" />
       <cu-card cTitle="Total Confirmed" :cData="globalData.TotalConfirmed" />
       <cu-card cTitle="New Deaths" :cData="globalData.NewDeaths" />
     </v-card>
-
     <all-countries :countries="countries" />
   </v-container>
 </template>
@@ -44,3 +43,10 @@ export default {
   },
 };
 </script>
+
+<style>
+  .card-fix {
+    width: 98.8%;
+  }
+
+</style>
