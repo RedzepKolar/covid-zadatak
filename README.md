@@ -1,5 +1,3 @@
-# legit_test
-
 ## Project setup
 ```
 npm install
